@@ -1,4 +1,39 @@
-<!doctype html><html lang="en"><head><meta charset="UTF-8"><title>Document</title></head><body><article id="game"><canvas id="board"></canvas><canvas id="dots"></canvas><canvas id="pacMan"></canvas><canvas id="ghosts"></canvas><canvas id="text"></canvas><ul id="menu"><li><button autofocus id="onePlayer">One player</button> <button id="changeFirstControl">Change 1Player controls</button></li><li><button id="twoPlayers">Two players</button> <button id="changeSecondControl">Change 2Player controls</button></li></ul></article><button id="muteButton" class="volume"><div></div></button><style>@font-face {
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+
+<article id="game">
+
+	<canvas id="board"></canvas>
+	<canvas id="dots"></canvas>
+	<canvas id="pacMan"></canvas>
+	<canvas id="ghosts"></canvas>
+	<canvas id="text"></canvas>
+
+	<ul id="menu">
+		<li>
+			<button autofocus id="onePlayer">One player</button>
+			<button id="changeFirstControl">Change 1Player controls</button>
+		</li>
+		<li>
+			<button id="twoPlayers">Two players</button>
+			<button id="changeSecondControl">Change 2Player controls</button>
+		</li>
+	</ul>
+
+</article>
+
+<button id="muteButton" class="volume">
+	<div></div>
+</button>
+
+<style>
+
+@font-face {
 	font-family: "Press Start 2P";
 	src: url("./assets/fonts/PressStart2P-Regular.ttf") format("truetype");
 	font-style: normal;
@@ -88,4 +123,14 @@ canvas{
 	transform: rotate(-45deg);
 	background-color: black;
 	box-shadow: 2px 2px 0px #fff;
-}</style><script src="bundle.js"></script></body></html>
+}
+
+</style>
+
+<script type="text/javascript" src="./js/tools.js"></script>
+<script type="text/javascript" src="./js/classes.js"></script>
+<script type="text/javascript" src="./js/main.js"></script>
+<script type="text/javascript" src="./js/board.js"></script>
+
+</body>
+</html>
