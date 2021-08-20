@@ -17,6 +17,7 @@ jobs:
 
     - name: Prepare and deploy
       env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         REPOS_ACCESS_TOKEN: ${{ secrets.REPOS_ACCESS_TOKEN }}
       run: |
         npm install
